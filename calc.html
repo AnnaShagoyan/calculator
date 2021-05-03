@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_container" id="demo">
+        <div class="display">
+            <input type="text" id="result"/>
+        </div>
+        <div class="buttons_container">
+            <div class="row">
+                <input type = "button" class = "operators" value = "ac" onclick="clear()"/>
+                <input type = "button" class = "operators" value = "/" onclick = "setOperator('/')"/>
+                <input type = "button" class = "operators" value = "x" onclick = "setOperator('x')"/>
+            </div>
+
+            <div class="row">
+                <input type = "button" class = "button" value = "1" onclick = "display('1')"/>
+                <input type = "button" class = "button" value = "2" onclick = "display('2')"/>
+                <input type = "button" class = "button" value = "3" onclick = "display('3')"/>
+            </div>
+
+            <div class="row">
+                <input type = "button" class = "button" value = "4" onclick = "display('4')"/>
+                <input type = "button" class = "button" value = "5" onclick = "display('5')"/>
+                <input type = "button" class = "button" value = "6" onclick = "display('6')"/>
+            </div>
+
+            <div class="row">
+                <input type = "button" class = "button" value = "7" onclick = "display('7')"/>
+                <input type = "button" class = "button" value = "8" onclick = "display('8')"/>
+                <input type = "button" class = "button" value = "9" onclick = "display('9')"/>
+            </div>
+
+            <div class="row">
+                <input type = "button" class = "operators" value = "+" onclick = "setOperator('+')"/>
+                <input type = "button" class = "operators" value = "-" onclick = "setOperator('-')"/>
+                <input type = "button" class = "button" value = "=" onclick="solve()"/>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
